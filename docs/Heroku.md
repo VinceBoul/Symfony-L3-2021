@@ -72,7 +72,7 @@ Pour faciliter le test et la présentation de chaque projet, tous les groupes de
     Provision add-ons
     Start an interactive shell
     Define config vars
-    Provision a database
+    Provision a database : `heroku addons:create heroku-postgresql:hobby-dev`
     Next steps
     * https://devcenter.heroku.com/articles/getting-started-with-php
 
