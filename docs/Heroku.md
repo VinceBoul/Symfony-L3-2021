@@ -6,9 +6,33 @@ Heroku est une plate-forme en ligne qui permet aux développeurs de créer, d'ex
 
 Pour déployer votre site sur Heroku, vous devez d'abord créer votre projet sur GitHub.
 
-Pour cela, suivre les étapes suivantes : 
+Pour cela, suivre les étapes suivantes :
+
+### Création du repo  
 * Créer un compte Github
 * Créer un repo pour ce projet
+
+#### Configuration de la clé SSH
+
+[Voir documentation](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+ 
+![A test image](imgs/ssh_key.png)
+
+Créer un fichier `config` dans le dossier `C:\Users\<votre utilisateur>\.ssh` et copiez les lignes suivantes :
+```
+Host github
+    Hostname github.com
+    IdentityFile ~/.ssh/<nom de la clef ssh privée>
+```
+
+Exemple : 
+
+```
+Host github
+    Hostname github.com
+    IdentityFile ~/.ssh/id_ed25519
+``` 
+
 * Dans le répertoire du projet que vous avez cloné (`C:\wamp64\www\symfony-l3-2021`) :
     * Supprimer le dossier `.git`
 * Suivre ensuite les lignes de commandes que vous retrouverez dans le repo créé : 
@@ -18,7 +42,8 @@ git init
 git add *
 git commit -m "first commit"
 git branch -M main
-git remote add origin <url du repo>
+git remote add origin <url SSH du repo>
+# Exemple : git remote add origin git@github:VinceBoul/Symfony-L3-2021.git
 git push -u origin main
 ```    
 * Ajouter les autres collaborateurs du groupe au projet :
@@ -32,11 +57,27 @@ Pour faciliter le test et la présentation de chaque projet, tous les groupes de
 > Si vous déployez projet sur votre propre serveur, vous n'aurez pas besoin de le faire sur Heroku 
 
 * Suivre le tutoriel : 
+  * Introduction
+      * Créer un compte Heroku (1 par groupe)
+      * Avoir installé PHP et Composer localement
+    * Set up
+      * Installer l'executeur de commande Heroku (Windows / MacOS / Ubuntu)
+    * Prepare the app : **Le projet a déjà été cloné - Se placer juste dans le dossier via le terminal**
+    * Deploy the app
+    * View logs
+    * Define a Procfile : **Passer cette étape, le fichier `Procfile` existe déjà**
+    * Scale the app : **Passer cette étape**
+    * Declare app dependencies : **Passer cette étape**
+    Push local changes
+    Provision add-ons
+    Start an interactive shell
+    Define config vars
+    Provision a database
+    Next steps
     * https://devcenter.heroku.com/articles/getting-started-with-php
-        * Créer un compte Heroku (1 par groupe)
-        * Avoir installé PHP et Composer localement
+
     * https://devcenter.heroku.com/articles/getting-started-with-php#set-up
-        * Installer l'executeur de commande Heroku (Windows / MacOS / Ubuntu)
+        
     
 
 
