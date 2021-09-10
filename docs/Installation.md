@@ -14,7 +14,7 @@ Pré requis :
 * Commande Symfony via le site officiel Symfony https://symfony.com/download
 
 
-## PHP en ligne de commande
+## PHP en ligne de commande (si php ne fonctionne pas)
 
 * Windows
     * Menu Démarrer 
