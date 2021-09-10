@@ -5,8 +5,7 @@ https://github.com/VinceBoul/Symfony-L3
 # Installation
 
 Pré requis : 
-* Wamp / XAMP / Lamp
-* PHP 7.3 ou plus
+* Wamp / XAMP / Lamp (embarquent déjà PHP)
 * PostgreSQL : https://www.postgresql.org/download/
 * Node JS  : https://nodejs.org/en/download/
 * Composer : https://getcomposer.org/download/
