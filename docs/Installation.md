@@ -37,7 +37,7 @@ Pré requis :
 
 ### Création de la base de données
 
-Modifier le fichier .`env.local` avec les informations de votre BDD, exemple : 
+Modifier le fichier .`env` avec les informations de votre BDD, exemple : 
 
 Avec mot de passe (WAMP) : `DATABASE_URL="mysql://root:root@localhost:3306/l3_symfony"`
 
