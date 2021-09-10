@@ -53,6 +53,8 @@ Créer la base de données avec la commande ` php bin/console doctrine:database:
 
 # Mettre à jour la base de  données
 
+
+* Créer une entité : ` php bin/console make:entity`
 * Créer les fichiers de migration : ` php bin/console make:migration`
 * Lancer la mise à jour de la BDD : ` php bin/console doctrine:migrations:migrate` 
 
