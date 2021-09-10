@@ -6,7 +6,8 @@ https://github.com/VinceBoul/Symfony-L3
 
 Pré requis : 
 * Wamp / XAMP / Lamp (embarquent déjà PHP)
-* PostgreSQL : https://www.postgresql.org/download/ + PgAdmin : https://www.pgadmin.org/download/pgadmin-4-windows/
+* PostgreSQL : https://www.postgresql.org/download/ -> cocher PgAdmin lors de l'installation 
+  * Sinon PgAdmin est dispo à cette adresse : https://www.pgadmin.org/download/pgadmin-4-windows/
 * Node JS  : https://nodejs.org/en/download/
 * Composer : https://getcomposer.org/download/
 * Git : https://git-scm.com/downloads
