@@ -33,20 +33,15 @@ Pré requis :
 * Copier coller le projet dans le répertoire `www` de Wamp ( dossier `htdocs`pour Xamp)
 * En ligne de commande se placer dans le dossier du projet, exemple : `cd C:\wamp64\www\Symfony-L3-master`
 
-##Installation Packages PHP
-
-* Dans le répertoire du projet, lancer la commande `composer i`
-> Si vous n'avez que le `composer.phar`, lancer `php composer.phar i`
-
 ## Démarrage projet Symfony
 
 ### Création de la base de données
 
 Modifier le fichier .`env.local` avec les informations de votre BDD, exemple : 
 
-Avec mot de passe : `DATABASE_URL="mysql://root:root@localhost:3306/l3_symfony"`
+Avec mot de passe (WAMP) : `DATABASE_URL="mysql://root:root@localhost:3306/l3_symfony"`
 
-Sans mot de passe : `DATABASE_URL="mysql://root@localhost:3306/l3_symfony"`
+Sans mot de passe (XAMP) : `DATABASE_URL="mysql://root@localhost:3306/l3_symfony"`
 
 Si le serveur MySQL n'est pas trouvé, tenter avec :
 `DATABASE_URL="mysql://root@127.0.0.1:3306/l3_symfony"`
@@ -71,4 +66,4 @@ Créer la base de données avec la commande ` php bin/console doctrine:database:
 > Pré requis : Installer la commande Symfony via le site officiel Symfony (bouton Download)
 >https://symfony.com/download
 
-Lancer la commande `symfony server:start`
+Lancer la commande `symfony serve`
