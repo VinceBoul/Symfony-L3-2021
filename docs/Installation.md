@@ -29,7 +29,7 @@ Pré requis :
 
 ## Récupérer le projet
 
-* Cloner ou télécharger le projet
+* Cloner ou télécharger le projet ou créer un projet avec la commande symfony (voir la doc officielle)
 * Copier coller le projet dans le répertoire `www` de Wamp ( dossier `htdocs`pour Xamp)
 * En ligne de commande se placer dans le dossier du projet, exemple : `cd C:\wamp64\www\Symfony-L3-master`
 
