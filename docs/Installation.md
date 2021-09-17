@@ -41,15 +41,34 @@ Modifier le fichier .`env` avec les informations de votre BDD, exemple :
 
 Avec mot de passe (WAMP) : `DATABASE_URL="mysql://root:root@localhost:3306/l3_symfony"`
 
-Sans mot de passe (XAMP) : `DATABASE_URL="mysql://root@localhost:3306/l3_symfony"`
+Sans mot de passe (XAMPP) : `DATABASE_URL="mysql://root@localhost:3306/l3_symfony"`
 
 Si le serveur MySQL n'est pas trouvé, tenter avec :
 `DATABASE_URL="mysql://root@127.0.0.1:3306/l3_symfony"`
 
 Utilisateurs MacOS : `DATABASE_URL="mysql://root@127.0.0.1:8889/l3_symfony"`
 
-Créer la base de données avec la commande ` php bin/console doctrine:database:create
-`
+#### Configurer PostgreSQL :
+Modifier le fichier `config/packages/doctrine.yml` : 
+```
+doctrine:
+    dbal:
+        url: '%env(resolve:DATABASE_URL)%'
+
+        # IMPORTANT: You MUST configure your server version,
+        # either here or in the DATABASE_URL env var (see .env file)
+        #server_version: '13'
+        driver: 'pdo_pgsql'
+        charset: utf8
+        default_table_options:
+            charset: utf8
+            collate: ut8_unicode_ci
+```
+
+DATABASE_URL="pgsql://root:root@127.0.0.1:5432/symfony_l3_artisan?serverVersion=13&charset=utf8"
+
+
+Créer la base de données avec la commande ` php bin/console doctrine:database:create`
 
 # Mettre à jour la base de  données
 
