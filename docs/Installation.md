@@ -65,7 +65,7 @@ doctrine:
             collate: ut8_unicode_ci
 ```
 
-DATABASE_URL="pgsql://root:root@127.0.0.1:5432/symfony_l3_artisan?serverVersion=13&charset=utf8"
+`DATABASE_URL="pgsql://root:root@127.0.0.1:5432/symfony_l3_artisan?serverVersion=13&charset=utf8"`
 
 
 Créer la base de données avec la commande ` php bin/console doctrine:database:create`
