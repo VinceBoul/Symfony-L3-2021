@@ -56,24 +56,25 @@ Pour faciliter le test et la présentation de chaque projet, tous les groupes de
 
 > Si vous déployez projet sur votre propre serveur, vous n'aurez pas besoin de le faire sur Heroku 
 
-* Suivre le tutoriel en ligne :
-* Introduction
-  * Créer un compte Heroku (1 par groupe)
-  * Avoir installé PHP et Composer localement
-* Set up
-  * Installer l'executeur de commande Heroku (Windows / MacOS / Ubuntu)
-* Prepare the app : **Le projet a déjà été cloné - Se placer juste dans le dossier via le terminal**
-* Deploy the app
-* View logs
-* Define a Procfile : **Passer cette étape, le fichier `Procfile` existe déjà**
-* Scale the app : **Passer cette étape**
-* Declare app dependencies : **Passer cette étape**
-Push local changes
-Provision add-ons
-Start an interactive shell
-Define config vars
-Provision a database : `heroku addons:create heroku-postgresql:hobby-dev`
-Next steps
-* https://devcenter.heroku.com/articles/getting-started-with-php
+* Suivre le tutoriel : https://devcenter.heroku.com/articles/getting-started-with-php
+
+  * Introduction
+      * Créer un compte Heroku (1 par groupe)
+      * Avoir installé PHP et Composer localement
+    * Set up
+      * Installer l'executeur de commande Heroku (Windows / MacOS / Ubuntu)
+    * Prepare the app : **Le projet a déjà été cloné - Se placer juste dans le dossier via le terminal**
+    * Deploy the app : `git push heroku main`
+    * View logs
+    * Define a Procfile : **Passer cette étape, le fichier `Procfile` existe déjà**
+    * Scale the app : **Passer cette étape**
+    * Declare app dependencies : **Passer cette étape**
+    * Push local changes : **Passer cette étape**
+    * Provision add-ons : **Passer cette étape**
+    * Start an interactive shell : 
+        * Vous pouvez lancer des commandes directement sur la machine avec la commande suivante : `heroku run php bin/console `
+    * Define config vars : **Passer cette étape**
+    * Provision a database : `heroku addons:create heroku-postgresql:hobby-dev`
+    * Next steps : **Passer cette étape**    
 
 * https://devcenter.heroku.com/articles/getting-started-with-php#set-up
